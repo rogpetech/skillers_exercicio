@@ -1,3 +1,3 @@
-def greatest_of_three(a, b, c)
+def greatest_of_three(number1, number2, number3)
 
 end
