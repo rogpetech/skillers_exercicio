@@ -1,25 +1,25 @@
-# Projeto Skill.dev - Exercício 2: Verificação de Idade e Categoria
+# Projeto Skill.dev - Exercício 3: Comparação de Idades
 
 ## Sobre o Projeto
 
-Este projeto é parte do curso Skill.dev e tem como objetivo desenvolver um programa interativo em Ruby que solicita ao usuário um número, determina se o número é par(even) ou ímpar(odd) e imprime o resultado. O exercício consiste em:
+Este projeto é parte do curso Skill.dev e tem como objetivo desenvolver um programa em Ruby que solicita ao usuário duas idades, verifica se são iguais e imprime uma mensagem correspondente. O exercício consiste em:
 
-- Solicitar ao usuário um número.
-- Determinar se o número é par ou ímpar.
-- Imprimir o resultado.
+- Solicitar ao usuário duas idades.
+- Verificar se as idades são iguais.
+- Imprimir uma mensagem correspondente.
 
 ## Estrutura do Projeto
 
 O projeto possui a seguinte estrutura de pastas e arquivos:
 
 ```
-ex01/
+ex02/
 |-- lib/
-|   |-- even_or_odd.rb
+|   |-- even_odd.rb
 |   |-- main.rb
 |   |-- typing.rb
 |-- spec/
-|   |-- even_or_odd_spec.rb
+|   |-- even_odd_spec.rb
 |   |-- spec_helper.rb
 |-- Gemfile
 |-- Gemfile.lock
@@ -31,44 +31,45 @@ ex01/
 1. Clone o repositório para o seu ambiente local:
 
    ```bash
-   git clone https://github.com/seu-usuario/ex01.git
+   git clone https://github.com/seu-usuario/ex02.git
    ```
 
 2. Acesse o diretório do projeto:
 
    ```bash
-   cd ex01
+   cd ex02
    ```
 
 3. Execute o programa principal:
 
-   ```bash
-   ruby lib/main.rb
-   ```
+```bash
+$ bundle install
+$ ruby lib/main.rb
+```
 
-   O programa solicitará que você digite um número. Insira o número e pressione Enter para obter a resposta se é par (even) ou ímpar(odd).
+   O programa solicitará que você digite duas idades. Insira as idades e pressione Enter para obter a mensagem correspondente.
 
 ## Implementação da Lógica
 
-O arquivo `lib/even_or_odd.rb` contém a função `even_or_odd(number)` que deve ser implementada para determinar a categoria com base na idade.
+O arquivo `lib/even_odd.rb` contém a função `even_odd(number)` que deve ser implementada para comparar as duas idades.
 
 ```ruby
-# lib/even_or_odd.rb
+# lib/even_odd.rb
 
-def even_or_odd(number)
+def even_odd(number)
   # Sua implementação aqui
 end
 ```
 
 ## Testes
 
-Os testes para a função `even_or_odd` estão definidos no arquivo `spec/even_or_odd_spec.rb`. Certifique-se de implementar a lógica correta para que os testes passem com sucesso.
+Os testes para a função `even_odd` estão definidos no arquivo `spec/even_odd_spec.rb`. Certifique-se de implementar a lógica correta para que os testes passem com sucesso.
 
 ```ruby
-# spec/even_or_odd_spec.rb
+# spec/even_odd_spec.rb
 
 require 'spec_helper'
-require_relative '../lib/even_or_odd'
+require_relative '../lib/even_odd'
 
 describe 'Even or Odd' do
   describe '.even_or_odd' do
@@ -94,3 +95,47 @@ rspec spec
 ```
 
 Certifique-se de que todos os testes passam antes de finalizar a implementação.
+
+## Adicionando Função de Entrada de Números
+
+O arquivo `lib/typing.rb` contém a função `typing` que pode ser usada para solicitar dois números ao usuário.
+
+```ruby
+# lib/typing.rb
+
+def typing
+  puts "Digite o primeiro número: "
+  number1 = gets.chomp.to_i
+
+  puts "Digite o segundo número: "
+  number2 = gets.chomp.to_i
+
+  [number1, number2]
+end
+```
+
+## Atualizando Main para Usar a Função de Entrada
+
+O arquivo `lib/main.rb` pode ser atualizado para utilizar a função de entrada `typing` e a função de comparação `even_odd`.
+
+```ruby
+# lib/main.rb
+
+require_relative 'even_odd'
+require_relative 'typing'
+
+def main
+  numbers = typing
+  result = even_odd(numbers[0], numbers[1])
+
+  if result
+    puts "As idades são iguais."
+  else
+    puts "As idades são diferentes."
+  end
+end
+
+main
+```
+
+Agora, ao executar `ruby lib/main.rb`, o programa solicitará dois números e informará se eles são iguais ou diferentes.
