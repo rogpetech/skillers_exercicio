@@ -1,4 +1,4 @@
-# Projeto Skill.dev - Exercício 4: Comparação de Strings
+# Projeto Skill.dev - Exercício 5: Comparação entre três números
 
 ## Sobre o Projeto
 
