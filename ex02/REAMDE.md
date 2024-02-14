@@ -1,4 +1,4 @@
-# Projeto Skill.dev - Exercício 3: Comparação de Idades
+# Projeto Skill.dev - Exercício 2: Ímpar ou Par
 
 ## Sobre o Projeto
 
