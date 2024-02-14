@@ -1,5 +1,5 @@
 def typing
-  puts "Digite uma idade: "
+  puts "Digite uma palavra: "
   string = gets.chomp
   string
 end
