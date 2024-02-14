@@ -1,9 +1,10 @@
-require_relative 'category_age'
+require_relative 'compare_strings'
 require_relative 'typing'
 
 def main
-  age = typing_age
-  category_age(age)
+  str1 = typing
+  str2 = typing
+  compare_strings(str1, str2)
 end
 
 main

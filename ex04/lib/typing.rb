@@ -1,5 +1,5 @@
-def typing_age
+def typing
   puts "Digite uma idade: "
-  age = gets.chomp.to_i
-  age
+  string = gets.chomp
+  string
 end
