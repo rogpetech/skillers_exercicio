@@ -1,5 +1,5 @@
 def typing
-  puts "Digite um número: "
-  number = gets.chomp.to_i
-  number
+  puts 'Digite sua nota na disciplina: '
+  grade = gets.chomp.to_f
+  grade
 end
