@@ -1,4 +1,4 @@
-# Projeto Skill.dev - Exercício 1: Verificação de Idade e Categoria
+# Projeto Skill.dev - Exercício 03: Número Positivo Checker
 
 ## Sobre o Projeto
 
