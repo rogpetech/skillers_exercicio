@@ -1,4 +1,4 @@
-# Projeto Skill.dev - Exercício 4: Comparação de Strings
+# Projeto Skill.dev - Exercício 6: Aprovação em Disciplina
 
 ## Sobre o Projeto
 
@@ -14,13 +14,13 @@ Maior de Três Números:
 O projeto possui a seguinte estrutura de pastas e arquivos:
 
 ```
-ex05/
+ex06/
 |-- lib/
-|   |-- greatest_of_three.rb
+|   |-- approval.rb
 |   |-- main.rb
 |   |-- typing.rb
 |-- spec/
-|   |-- greatest_of_three_spec.rb
+|   |-- approval_spec.rb
 |   |-- spec_helper.rb
 |-- Gemfile
 |-- Gemfile.lock
@@ -32,14 +32,14 @@ ex05/
 1. Clone o repositório para o seu ambiente local:
 
    ```bash
-   git clone https://github.com/seu-usuario/ex05.git
+   git clone https://github.com/seu-usuario/ex06.git
    ```
 
 2. Acesse o diretório do projeto:
 
    ```bash
    $ bundle install
-   $ cd ex05
+   $ cd ex06
    ```
 
 3. Execute o programa principal:
@@ -52,50 +52,44 @@ ex05/
 
 ## Implementação da Lógica
 
-O arquivo `lib/greatest_of_three.rb` contém a função `greatest_of_three(age)` que deve ser implementada para determinar a categoria com base na idade.
+O arquivo `lib/approval.rb` contém a função `check_approval(grade)` que deve ser implementada para determinar se está aprovado ou não.
 
 ```ruby
-# lib/greatest_of_three.rb
+# lib/approval.rb
 
-def greatest_of_three(number1, number2, number3)
+def check_approval(grade)
   # Sua implementação aqui
 end
 ```
 
 ## Testes
 
-Os testes para a função `greatest_of_three` estão definidos no arquivo `spec/greatest_of_three_spec.rb`. Certifique-se de implementar a lógica correta para que os testes passem com sucesso.
+Os testes para a função `check_approval` estão definidos no arquivo `spec/approval_spec.rb`. Certifique-se de implementar a lógica correta para que os testes passem com sucesso.
 
 ```ruby
-# spec/greatest_of_three_spec.rb
+# spec/approval_spec.rb
 require 'spec_helper'
-require_relative '../lib/greatest_of_three'
+require_relative '../lib/approval'
 
-describe 'Greatest of Three Numbers' do
-  context 'when all numbers are positive' do
-    it 'returns the greatest number' do
-      expect(greatest_of_three(5, 10, 7)).to eq(10)
+require 'spec_helper'
+require_relative '../lib/approval'
+
+describe 'Check Approval for Grade' do
+  context 'when grade is equal to or greater than 6' do
+    it 'returns "Aprovado"' do
+      expect(check_approval(6)).to eq('Aprovado')
+      expect(check_approval(8)).to eq('Aprovado')
     end
   end
 
-  context 'when all numbers are negative' do
-    it 'returns the greatest number' do
-      expect(greatest_of_three(-8, -2, -5)).to eq(-2)
-    end
-  end
-
-  context 'when numbers are a mix of positive and negative' do
-    it 'returns the greatest number' do
-      expect(greatest_of_three(15, -3, 8)).to eq(15)
-    end
-  end
-
-  context 'when numbers are equal' do
-    it 'returns any of the equal numbers' do
-      expect(greatest_of_three(6, 6, 6)).to eq(6)
+  context 'when grade is less than 6' do
+    it 'returns "Reprovado"' do
+      expect(check_approval(5)).to eq('Reprovado')
+      expect(check_approval(2)).to eq('Reprovado')
     end
   end
 end
+
 ```
 
 Execute os testes usando o comando:
