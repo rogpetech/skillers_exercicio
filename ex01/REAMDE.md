@@ -38,14 +38,16 @@ ex01/
 2. Acesse o diretório do projeto:
 
    ```bash
-   cd ex01
+   $ bundle install
+   $ cd ex01
    ```
 
 3. Execute o programa principal:
 
-   ```bash
-   ruby lib/main.rb
-   ```
+```bash
+$ bundle install
+$ ruby lib/main.rb
+```
 
    O programa solicitará que você digite uma idade. Insira a idade e pressione Enter para obter a categoria correspondente.
 
