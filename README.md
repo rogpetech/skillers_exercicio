@@ -1,6 +1,6 @@
-# Projeto RogpeTech - Exercícios Ruby
+# Projeto skill.dev - Exercícios Ruby
 
-Este repositório contém os exercícios resolvidos do curso RogpeTech, que abordam conceitos e práticas de programação em Ruby. Cada exercício está em sua respectiva pasta com seu código e testes.
+Este repositório contém os exercícios resolvidos do curso skill.dev, que abordam conceitos e práticas de programação em Ruby. Cada exercício está em sua respectiva pasta com seu código e testes.
 
 ## Requisitos
 
