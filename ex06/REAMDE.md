@@ -48,7 +48,7 @@ ex06/
    ruby lib/main.rb
    ```
 
-   O programa solicitará que você digite uma idade. Insira a idade e pressione Enter para obter a categoria correspondente.
+  O programa solicitará que você digite um número float. Insira o número e pressione Enter para obter as informações.
 
 ## Implementação da Lógica
 
