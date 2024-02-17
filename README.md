@@ -57,6 +57,75 @@ O pensamento computacional é uma habilidade essencial para resolver problemas d
 - Use abstração para simplificar o problema e focar nas partes mais importantes.
 - Utilize algoritmos e estruturas de dados adequadas para otimizar a solução.
 - Teste sua solução com diferentes entradas para garantir sua robustez.
+  
+
+## Exercício
+
+**Exercícios Fáceis:**
+
+1. **Verificação de Par ou Ímpar:**
+   - Solicite ao usuário um número.
+   - Determine se o número é par ou ímpar e imprima o resultado.
+
+2. **Comparação de Idades:**
+   - Peça ao usuário para inserir duas idades.
+   - Verifique se as idades são iguais e imprima uma mensagem correspondente.
+
+3. **Verificação de Números Positivos:**
+   - Solicite um número ao usuário.
+   - Determine se o número é positivo e imprima uma mensagem correspondente.
+
+4. **Comparação de Strings:**
+   - Peça ao usuário para inserir duas strings.
+   - Verifique se as strings são iguais e imprima uma mensagem correspondente.
+
+5. **Maior de Três Números:**
+   - Solicite ao usuário três números.
+   - Determine e imprima o maior dos três números.
+
+**Exercícios Médios:**
+
+6. **Aprovação em Disciplina:**
+   - Peça ao usuário para inserir sua nota em uma disciplina.
+   - Determine se a nota é suficiente para aprovação (nota maior ou igual a 6) e imprima o resultado.
+
+7. **Comparação de Strings (Parte 2):**
+   - Solicite ao usuário para inserir duas strings.
+   - Verifique se as strings são diferentes e imprima uma mensagem correspondente.
+
+8. **Verificação de Números Pares e Múltiplos de 5:**
+   - Peça ao usuário para inserir um número.
+   - Determine se o número é par e se é múltiplo de 5. Imprima os resultados.
+
+9. **Jogo de Perguntas e Respostas:**
+   - Crie um jogo de perguntas e respostas.
+   - Faça uma pergunta ao usuário e verifique se a resposta está correta.
+
+10. **Comparação de Idades (Parte 2):**
+    - Solicite ao usuário para inserir duas idades.
+    - Verifique se as idades são diferentes e imprima uma mensagem correspondente.
+
+**Exercícios Difíceis:**
+
+11. **Verificação de Triângulo:**
+    - Peça ao usuário para inserir três valores representando os lados de um triângulo.
+    - Determine se é um triângulo válido e, se sim, classifique-o como equilátero, isósceles ou escaleno.
+
+12. **Simulação de Login:**
+    - Crie um sistema simples de login.
+    - Solicite ao usuário um nome de usuário e senha, e verifique se estão corretos.
+
+13. **Cálculo de Desconto:**
+    - Solicite ao usuário o valor de um produto.
+    - Aplique um desconto de 10% e imprima o valor final.
+
+14. **Validação de Email:**
+    - Peça ao usuário para inserir um endereço de e-mail.
+    - Verifique se o formato do e-mail é válido.
+
+15. **Jogo de Dados:**
+    - Crie um programa que simule o lançamento de um dado.
+    - Peça ao usuário para adivinhar o resultado e verifique se a resposta está correta.
 
 ## Conclusão
 
