@@ -2,11 +2,11 @@
 
 ## Sobre o Projeto
 
-Este projeto é parte do curso Skill.dev e tem como objetivo desenvolver um programa em Ruby que solicita ao usuário duas idades, verifica se são iguais e imprime uma mensagem correspondente. O exercício consiste em:
+Este projeto é parte do curso skill.dev e tem como objetivo desenvolver um programa em Ruby que solicita ao usuário duas idades, verifica se são iguais e imprime uma mensagem correspondente. O exercício consiste em:
 
-- Solicitar ao usuário duas idades.
-- Verificar se as idades são iguais.
-- Imprimir uma mensagem correspondente.
+- Em solicitar um número para o usuário
+- Analisar o número e verificar se é impar ou par
+- Imprimir uma mensagem correspondente. even(par) ou odd(ímpar)
 
 ## Estrutura do Projeto
 
@@ -51,7 +51,7 @@ $ ruby lib/main.rb
 
 ## Implementação da Lógica
 
-O arquivo `lib/even_odd.rb` contém a função `even_odd(number)` que deve ser implementada para comparar as duas idades.
+O arquivo `lib/even_odd.rb` contém a função `even_odd(number)` que deve ser implementada para mostrar ser é impar ou par.
 
 ```ruby
 # lib/even_odd.rb
@@ -96,21 +96,18 @@ rspec spec
 
 Certifique-se de que todos os testes passam antes de finalizar a implementação.
 
-## Adicionando Função de Entrada de Números
+## Adicionando Função de um entrada de um Número
 
-O arquivo `lib/typing.rb` contém a função `typing` que pode ser usada para solicitar dois números ao usuário.
+O arquivo `lib/typing.rb` contém a função `typing` que pode ser usada para solicitar um número ao usuário.
 
 ```ruby
 # lib/typing.rb
 
 def typing
-  puts "Digite o primeiro número: "
-  number1 = gets.chomp.to_i
+  puts "Digite o número: "
+  number = gets.chomp.to_i
 
-  puts "Digite o segundo número: "
-  number2 = gets.chomp.to_i
-
-  [number1, number2]
+  number
 end
 ```
 
@@ -125,17 +122,13 @@ require_relative 'even_odd'
 require_relative 'typing'
 
 def main
-  numbers = typing
-  result = even_odd(numbers[0], numbers[1])
+  number = typing
+  result = even_odd(number)
 
-  if result
-    puts "As idades são iguais."
-  else
-    puts "As idades são diferentes."
-  end
+  puts "O #{number} é #{result}"
 end
 
 main
 ```
 
-Agora, ao executar `ruby lib/main.rb`, o programa solicitará dois números e informará se eles são iguais ou diferentes.
+Agora, ao executar `ruby lib/main.rb`, o programa solicitará um número e informará se ele é ímpar ou par.
