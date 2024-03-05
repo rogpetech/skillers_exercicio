@@ -6,8 +6,9 @@ Este projeto faz parte do curso skill.dev e tem como objetivo desenvolver um pro
 
 Maior de Três Números:
 
-- Solicite ao usuário três números.
-- Determine e imprima o maior dos três números.
+- Solicite o usuário uma nota
+- Se for a nota for maior ou igual a 6 está aprovado
+- Se a nota for menor que 6 está reprovado
 
 ## Estrutura do Projeto
 

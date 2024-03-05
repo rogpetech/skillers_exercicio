@@ -1,8 +1,8 @@
-# Projeto Skill.dev - Exercício 4: Comparação de Strings
+# Projeto skill.dev - Exercício 4: Comparação de Strings
 
 ## Sobre o Projeto
 
-Este projeto faz parte do curso Skill.dev e tem como objetivo desenvolver um programa em Ruby que solicita ao usuário inserir duas strings e verifica se são iguais. O exercício consiste em:
+Este projeto faz parte do curso skill.dev e tem como objetivo desenvolver um programa em Ruby que solicita ao usuário inserir duas strings e verifica se são iguais. O exercício consiste em:
 
 - Solicitar ao usuário inserir duas strings.
 - Verificar se as strings são iguais e imprimir a mensagem correspondente.
